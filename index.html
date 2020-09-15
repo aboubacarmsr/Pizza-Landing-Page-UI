@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <ul class="nav-list">
+          <li><a class="logo" href="#">Pizza.</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Offer</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="left">
+          <img class="js-tilt" src="images/pizza.png" alt="" />
+        </div>
+        <div class="right">
+          <h1>Cheesy & Spicy pizza only</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+            aspernatur ad minima optio officiis quia nihil placeat! Cumque
+            voluptates sed dignissimos! Natus quo aspernatur rerum quam ratione,
+            harum unde blanditiis!
+          </p>
+          <a class="js-tilt" href="#">Order Now</a>
+        </div>
+      </div>
+      <div class="square"></div>
+      <div class="scrolldown">Scroll Down</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script type="text/javascript">
+      $(".js-tilt").tilt({
+        glare: true,
+        maxGlare: 0.5,
+        scale: 1.1
+      });
+    </script>
+  </body>
+</html>

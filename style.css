@@ -1,0 +1,103 @@
+:root{
+    --myYellow: #ffb300;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+body {
+    font-family: "Segoe UI";
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.nav-list {
+    padding: 15px 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 300ms ease-in;
+}
+
+.nav-list li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 25px;
+}
+
+.nav-list li:first-child {
+    margin-right: auto;
+}
+
+.nav-list li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.nav-list li a:hover {
+    color: var(--myYellow);
+}
+
+.left {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding: 0 0 0 80px;
+}
+
+.right {
+    width: 50%;
+    float: right;
+    padding: 100px 50px;
+}
+
+.right h1{
+    font-size: 72px;
+    font-weight: 500px;
+}
+
+.right p{
+    font-size: 16px;
+    padding: 15px 0;
+}
+
+.right a{
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--myYellow);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 50px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
+}
+
+.square {
+    position: absolute;
+    z-index: -1;
+    height: 450px;
+    width: 450px;
+    top: 0;
+    left: 0;
+    background: var(--myYellow);
+}
+
+.scrolldown {
+    position: absolute;
+    bottom: 100px;
+    right: 30px;
+    font-weight: 500;
+    transform: rotate(90deg);
+}
